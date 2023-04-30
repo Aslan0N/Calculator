@@ -8,7 +8,14 @@ for(let i=0; i<number.length; i++){
         }else{
             if(this.innerHTML == "C"){
                 inputBox.innerHTML = "";
-            }else{
+            }if(this.innerHTML == "ON"){
+                if(!inputBox.innerHTML == ""){
+                    inputBox.innerHTML = ""
+                }else{
+                    inputBox.innerHTML = "0"
+                }
+            }
+            else{
                 inputBox.innerHTML += this.innerHTML
             }
         }
